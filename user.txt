@@ -1,0 +1,30 @@
+
+Setting environment for using XAMPP for Windows.
+Mayur@DESKTOP-9VECBQ3 f:\xampp
+# mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use pydbcon;
+Database changed
+MariaDB [pydbcon]> select * from user;
++---------+-----------------+-----------------------+-----------+
+| user_id | name            | email                 | password  |
++---------+-----------------+-----------------------+-----------+
+|       1 | prachi          | prachi@gmail.com      | prachi123 |
+|       2 | mayur           | mayur@gmail.com       | mayur123  |
+|       3 | prayur          | prayur@gmail.com      | prayur123 |
+|    NULL | mahesh          | mahesh@gmail.com      | mahesh123 |
+|    NULL | mahesh          | mahesh@gmail.com      | mahesh123 |
+|    NULL | vikrant         | vicky@gmail.com       | vicky123  |
+|    NULL | pamu            | pamu@gmail.com        | pamu123   |
+|    NULL | prachi deshmukh | deshmukh123@gmail.com | 123       |
++---------+-----------------+-----------------------+-----------+
+8 rows in set (0.000 sec)
+
+MariaDB [pydbcon]>
